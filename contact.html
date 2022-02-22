@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,200&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Header Section with Hero Images -->
+    <div class="contact_header"
+        style="background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url('Images/contact_header.png');">
+        <nav>
+            <a href="index.html"><img src="Images/logo.png"></a>
+            <div class='navbar' id="navbar_links">
+                <i class="fa fa-times" onclick="closeMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </div>
+
+    <!-- -- Contact Us Section Content -- -->
+    <!-- Google Map -->
+    <div class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3399.2068390843074!2d74.30140211479694!3d31.57337535168263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39191ca4502a7b33%3A0x22514efee6d62865!2sGovt.%20Islamia%20College%20Civil%20Lines!5e0!3m2!1sen!2s!4v1645479886919!5m2!1sen!2s"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="address_form">
+        <div class="row">
+            <div class="address_col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>XYZ Road,ABC Building Jamal Chowk</h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+92 3078423070</h5>
+                        <p>Monday to Friday, 06:00am to 06:00pm</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>ar2@gmail.com</h5>
+                        <p>E-Mail Me For Query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="address_col">
+                <form action="">
+                    <input type="text" placeholder="Enter Your Name" required>
+                    <input type="email" placeholder="Enter email Address" required>
+                    <input type="text" placeholder="Enter Your Subject" required>
+                    <textarea rows="10" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero_button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <h3>About Us</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint eaque error quod earum sequi saepe
+            reprehenderit labore ipsa, <br>dignissimos recusandae expedita, hic inventore laboriosam consectetur.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made With <i class="fa fa-heart"></i> By Easy Tutorials</p>
+    </div>
+
+
+
+    <!-- JavaScript  -->
+    <script>
+        // Script for openMenu and closeMenu
+        var navbar_links = document.getElementById('navbar_links')
+        function closeMenu() {
+            navbar_links.style.right = '-200px';
+        }
+        function openMenu() {
+            navbar_links.style.right = '0';
+        }
+    </script>
+</body>
+
+</html

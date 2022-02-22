@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,200&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Header Section with Hero Images -->
+    <div class="about_header"
+        style="background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url('Images/about_header.jpg');">
+        <nav>
+            <a href="index.html"><img src="Images/logo.png"></a>
+            <div class='navbar' id="navbar_links">
+                <i class="fa fa-times" onclick="closeMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <h1>About us</h1>
+    </div>
+    <!-- -- About Us Section Content -- -->
+    <div class="about_us">
+        <div class="row">
+            <div class="about_col">
+                <h3>We Are The Largest Network In The Field Of Information Technology</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates est provident quisquam ea neque
+                    dolor omnis fuga, quam aspernatur nam iure commodi inventore expedita iste, explicabo ab aperiam
+                    saepe ex labore maiores praesentium odio doloribus?</p>
+                <a href="#" class="hero_button"> EXPLORE NOW</a>
+            </div>
+            <div class="about_col">
+                <div class="my_image">
+                    <img src="/Images/testimonial2.jpg" alt="client photo">
+                </div>
+                <img src="/Images/about_col.jpg" alt="About Picture">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <h3>About Us</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint eaque error quod earum sequi saepe
+            reprehenderit labore ipsa, <br>dignissimos recusandae expedita, hic inventore laboriosam consectetur.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made With <i class="fa fa-heart"></i> By Easy Tutorials</p>
+    </div>
+
+
+
+    <!-- JavaScript  -->
+    <script>
+        // Script for openMenu and closeMenu
+        var navbar_links = document.getElementById('navbar_links')
+        function closeMenu() {
+            navbar_links.style.right = '-200px';
+        }
+        function openMenu() {
+            navbar_links.style.right = '0';
+        }
+    </script>
+</body>
+
+</html>
